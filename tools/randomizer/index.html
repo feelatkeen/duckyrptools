@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DuckyRP Randomizer</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<meta charset="UTF-8">
+		<style>
+			.btn{
+				background-color:white;
+				border-color:gray;
+				border-style:solid;
+				border-radius:32px;
+				}
+			.btn:hover{
+				background-color:gray;
+			}
+			.btn:active{
+				margin-left:1px;
+				margin-top:1px;
+			}
+			#random1{
+				text-align:center;
+				font-family:'Oswald';
+			}
+			#random1res{
+				background-color:green;
+				font-size:32px;
+				border-color:black;
+				border-style:solid;
+				border-radius:5px;
+				border-width:5px;
+				padding:10px;
+				display:inline-block;
+			}
+			#random3{
+				text-align: center;
+			}
+			#random3res{
+				font-size:32px;
+				border-color:black;
+				border-style:solid;
+				border-radius:5px;
+				border-width:5px;
+				padding:10px;
+				display:inline-block;
+			}
+			#random2{
+				text-align:center;
+			}
+			.yesres{
+				color:green;
+				font-family:'Oswald';
+				font-size:64px;
+			}
+			.nores{
+				color:red;
+				font-family:'Oswald';
+				font-size:64px;
+			}
+			body{
+				font-family:'Oswald';
+			}
+		</style>
+	</head>
+	<body>
+		<p><img src="logo.png"> DuckyRP Randomizer</p>
+		<div id="randomsel">
+			<select id="randomselector">
+				<option>Случайное число</option>
+				<option>Случайное да/нет</option>
+				<option>Случайная вещь из списка</option>
+			</select>
+			<div id="randomnumui">
+				<br>
+				От
+				<input id="randommin">
+				до
+				<input id="randommax">
+			</div>
+			<div id="rndlistui">
+				<textarea id="rndlistarea"></textarea>
+			</div>
+			<input id="selbtn" class="btn" type="button" value="ОК">
+		</div>
+		<div id="random1">
+			<p>Ваше число:</p>
+			<p id="random1res"></p>
+		</div>
+		<div id="random2">
+			<p id="random2res"></p>
+		</div>
+		<div id="random3">
+			<p id="random3res"></p>
+		</div>
+		<script src="randomizer.js"></script>
+	</body>
+</html>

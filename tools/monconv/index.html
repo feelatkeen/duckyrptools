@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SU money converter</title>
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet"> 
+		<style>
+			body{
+				text-align:center;
+				margin-top: 10%;
+				font-family:'Cuprum';
+			}
+			h1{
+				font-family:'Fira Sans Condensed';
+			}
+			.btn{
+				background-color:white;
+				border-color:gray;
+				border-style:solid;
+				border-radius:32px;
+			}
+			.btn:hover{
+				background-color:gray;
+			}
+			.btn:active{
+				margin-left:1px;
+				margin-top:1px;
+			}
+			#okbtncustom{
+				margin-top:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="logo.png">
+		<h1>DuckyRP Money Converter</h1>
+		<div id="customval">
+			<p>Введите название валюты</p>
+			<input id="customname" maxlength=3>
+			<p>Один доллар сколько равняется в вашей валюте??</p>
+			<input id="customvalue">
+			<br>
+			<input class="btn" id="okbtncustom" type="button" value="ОК">
+		</div>
+		<div id="convertertool">
+			<p>Конвертировать из 
+				<select id="moneys1">
+					<option>RUB</option>
+					<option>USD</option>
+					<option>UAH</option>
+				</select>
+				<input id="moneyval">
+				в
+				<select id="moneys2">
+					<option>RUB</option>
+					<option>USD</option>
+					<option>UAH</option>
+				</select> 
+			</p>
+			<input class="btn" id="okbtn" type="button" value="Конвертировать">
+			<p id="convresult"></p>
+		</div>
+		<script src="moneyconverter.js"></script>
+	</body>
+</html>

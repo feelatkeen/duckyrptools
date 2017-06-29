@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DuckyRP battle tool</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<style>
+			body{
+				font-family:'Oswald';
+				text-align:center;
+			}
+			.btn{
+				background-color:white;
+				border-color:gray;
+				border-style:solid;
+				border-radius:32px;
+				}
+			.btn:hover{
+				background-color:gray;
+			}
+			.btn:active{
+				margin-left:1px;
+				margin-top:1px;
+			}
+		</style>
+	</head>
+	<body>
+		<p><img src="logo.png"> DuckyRP battle tool</p>
+		<div id="entername">
+			<p>Введите имя моба:</p>
+			<input id="mobname">
+			<p>Ссылка на изображение моба:</p>
+			<input id="mobimg">
+			<p>Его HP</p>
+			<input id="mobhp">
+			<p>Ваше HP</p>
+			<input id="plrhp">
+			<p>Аттаки от моба:</p>
+<textarea id="attacklist">ударил вас
+кинул в вас палку
+</textarea>
+			<br>
+			<input type="button" value="Начать бой" class="btn" id="startfight">
+		</div>
+		<div id="mobbattle">
+			<p id="mobtitle">%имя моба%</p>
+			<p id="gmobhp">0</p>
+			<img id="mobimgp" src="" height=240>
+			<p>Ваша ответка</p>
+			<input id="attmob" value="ударить">
+			<p id="plrhpinf">%ваше хп%</p>
+			<input type="button" id="attbtn" value="Атаковать" class="btn">
+			<blockquote>
+<textarea id="attackstory"></textarea>
+			</blockquote>
+		</div>
+		<script src="battletool.js"></script>
+	</body>
+</html>
